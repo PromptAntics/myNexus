@@ -1,0 +1,52 @@
+.cm-s-material-darker .cm-keyword {
+    color: #c792ea;
+}
+.cm-s-material-darker .cm-atom {
+    color: #ffcb6b;
+}
+.cm-s-material-darker .cm-number {
+    color: #f78c6c;
+}
+.cm-s-material-darker .cm-def {
+    color: #82aaff;
+}
+.cm-s-material-darker .cm-variable-2 {
+    color: #f07178;
+}
+.cm-s-material-darker .cm-variable-3 {
+    color: #a3a3ff;
+}
+.cm-s-material-darker .cm-comment {
+    color: #546e7a;
+}
+.cm-s-material-darker .cm-string {
+    color: #c3e88d;
+}
+.cm-s-material-darker .cm-string-2 {
+    color: #f78c6c;
+}
+.cm-s-material-darker .cm-meta {
+    color: #ffcb6b;
+}
+.cm-s-material-darker .cm-bracket {
+    color: #ff5370;
+}
+.cm-s-material-darker .cm-tag {
+    color: #ff5370;
+}
+.cm-s-material-darker .cm-attribute {
+    color: #c792ea;
+}
+.cm-s-material-darker .cm-header {
+    color: #82aaff;
+}
+.cm-s-material-darker .cm-quote {
+    color: #697098;
+}
+.cm-s-material-darker .cm-link {
+    color: #80cbc4;
+}
+.cm-s-material-darker .cm-error {
+    color: #ff5370;
+    background-color: #000;
+}

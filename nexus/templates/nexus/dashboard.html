@@ -1,0 +1,24 @@
+{% extends "nexus/base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'nexus/css/dashboard.css' %}">
+<div class="dashboard">
+    <div class="project-list">
+        <h2>Projects</h2>
+        <ul id="project-list">
+            {% for project in projects %}
+            <li>{{ project.name }}</li>
+            {% endfor %}
+        </ul>
+        <button id="new-project-btn">New Project</button>
+    </div>
+    <div class="quick-access">
+        <h2>Quick Access</h2>
+        <ul>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "nexus/base.html" %}
+{% block content %}
+  <style>
+    #logout-page-title{
+      padding: 0px 30px;
+    }
+  </style>
+  <div class="form-content div-center">
+    <h2 class="jetbrains-mono-bold font-30" id="logout-page-title"> You have been logged out</h2>
+    <div class="form-row div-center">
+      <a class="form-field btn btn-large" href="{% url 'login' %}">Log in again.</a>
+    </div>
+  </div>
+{% endblock content %}

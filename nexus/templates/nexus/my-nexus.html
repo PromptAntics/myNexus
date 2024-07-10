@@ -1,0 +1,110 @@
+{% extends "nexus/base.html" %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'nexus/css/ide.css' %}">
+    <link rel="stylesheet" href="{% static 'nexus/css/aql-mode.css' %}">
+    <title>My Nexus</title>
+</head>
+<body>
+<div class="workspace">
+    <div class="main-content">
+        <section class="ai-container container" id="ai-container">
+            <div class="header">
+                <button id="minimize-btn">-</button>
+                <h2>My Nexus</h2>
+            </div>
+            <div class="chat-box" id="chat-box">
+                <div class="placeholder-message">Your messages will appear here...</div>
+                <div class="placeholder-message">How can Nexus elevate your ideas today?</div>
+                <div class="placeholder-message">................</div>
+                <div class="placeholder-message">Examples:</div>
+                <div class="placeholder-message">  -  Create a guide for expanding my landscape business</div>
+                <div class="placeholder-message">  -  Engage with an interactive assistant</div>
+                <div class="placeholder-message">  -  Enhance my resume</div>
+            </div>
+            <div class="chat-input">
+                <textarea id="user-input" placeholder="Share your idea..."></textarea>
+                <button id="voice-btn-nexus">🎤</button>
+                <button id="develop-btn">Develop</button>
+            </div>
+            <aside class="file-upload-zone">
+                <div id="dropzone" class="dropzone">
+                    <p>Drag and drop files here or click to upload</p>
+                    <input type="file" id="fileInput" multiple>
+                </div>
+                <div id="attached-files"></div>
+            </aside>
+            <div class="resizer resizer-right"></div>
+            <div class="resizer resizer-bottom-right"></div>
+        </section>
+        <section class="editor container">
+            <h2>Prompt</h2>
+            <textarea id="code-editor" class="code-editor" placeholder="Start writing your prompt here..."></textarea>
+            <div class="editor-buttons">
+                <button id="compile-btn">Text</button>
+                <button id="image-btn">Image</button>
+                <button id="debug-btn">Debug</button>
+                <button id="copy-btn">Copy</button>
+            </div>
+            <div class="resizer resizer-right"></div>
+            <div class="resizer resizer-bottom-right"></div>
+        </section>
+        <section class="output-display container">
+            <h2>Outputs</h2>
+            <div id="compiler-output" class="output"></div>
+            <div class="resizer resizer-right"></div>
+            <div class="resizer resizer-bottom-right"></div>
+        </section>
+    </div>
+</div>
+
+<button id="pdf-viewer-btn" class="btn btn-dark position-fixed" style="bottom: 20px; left: 20px;">
+    <img src="{% static 'nexus/images/docu.png' %}" alt="Open Documentation">
+</button>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Pause</h2>
+            <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p>Your current prompt will be cleared. Do you want to proceed?</p>
+        </div>
+        <div class="modal-footer">
+            <button id="cancel-btn" class="btn-secondary">Cancel</button>
+            <button id="confirm-btn" class="btn-primary">Confirm</button>
+        </div>
+    </div>
+</div>
+
+<div id="pdfModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Our Engine</h2>
+            <span class="close close-pdf">&times;</span>
+        </div>
+        <div class="modal-body">
+            <iframe src="{% static 'nexus/docs/aql-documentation-v18.pdf' %}" class="pdf-viewer"></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="imageModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="enlarged-image" src="" alt="Enlarged Image" style="max-width: 100%; height: auto;">
+        <button id="download-image-btn" class="download-btn">⬇️ Download</button>
+    </div>
+</div>
+
+<script src="{% static 'nexus/js/ide.js' %}"></script>
+<script src="{% static 'nexus/js/aql-mode.js' %}"></script>
+</body>
+</html>
+{% endblock content %}

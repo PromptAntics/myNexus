@@ -1,0 +1,33 @@
+/* Light Theme */
+.cm-s-light .cm-keyword { color: #005cc5; }
+.cm-s-light .cm-atom { color: #e36209; }
+.cm-s-light .cm-number { color: #d73a49; }
+.cm-s-light .cm-string { color: #032f62; }
+.cm-s-light .cm-comment { color: #6a737d; }
+.cm-s-light .cm-variable { color: #e36209; }
+.cm-s-light .cm-operator { color: #d73a49; }
+.cm-s-light .cm-bracket { color: #d73a49; }
+.cm-s-light .cm-type { color: #6f42c1; }
+
+/* Dark Theme */
+.cm-s-dark .cm-keyword { color: #78C5F0; }
+.cm-s-dark .cm-atom { color: #F5C242; }
+.cm-s-dark .cm-number { color: #FF7373; }
+.cm-s-dark .cm-string { color: #6BD45F; }
+.cm-s-dark .cm-comment { color: #CEFDF9; }
+.cm-s-dark .cm-variable { color: #FFA500; }
+.cm-s-dark .cm-operator { color: #FF7373; }
+.cm-s-dark .cm-bracket { color: #FF7373; }
+.cm-s-dark .cm-type { color: #D1AFFF; }
+
+/* Ensure body class changes the overall theme */
+body.light-mode .CodeMirror { background: white; color: black; }
+body.dark-mode .CodeMirror { background: #1e1e1e; color: white; }
+
+/* Add this at the end of your CSS file for proper loading */
+body.light-mode .cm-s-light,
+body.dark-mode .cm-s-dark {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}

@@ -1,0 +1,20 @@
+#emoji-picker {
+    display: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#emoji-picker span {
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+}
+#emoji-picker span img {
+    width: 20px;
+    height: 20px;
+}

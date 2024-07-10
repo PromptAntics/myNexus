@@ -1,0 +1,26 @@
+{% extends "nexus/base.html" %}
+
+{% block content %}
+    <div class="form-content div-center noto-sans-reg">
+      <div class="media div-center">
+        <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
+        <div class="media-body">
+          <h1 class="account-heading account-title">{{ user.username }}</h1>
+          <p class="text-secondary">{{ user.email }}</p>
+        </div>
+      </div>
+      <!-- FORM HERE -->
+      <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <fieldset class="form-row div-center">
+          <legend class="form-title">Profile Info</legend>
+          {{ u_form }}
+          {{ p_form }}
+        </fieldset>
+        <div class="form-row div-center">
+          <button class="form-field btn-large" type="submit">Update</button>
+          <a class="form-field btn-large btn-caution"href="{% url 'logout' %}">Logout</a>
+        </div>
+      </form>
+    </div>
+{% endblock content %}

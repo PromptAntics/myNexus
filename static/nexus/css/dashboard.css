@@ -1,0 +1,42 @@
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.project-list, .quick-access {
+    width: 45%;
+}
+
+.project-list h2, .quick-access h2 {
+    text-align: center;
+}
+
+#project-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+#project-list li {
+    margin-bottom: 0.5rem;
+}
+
+#new-project-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.quick-access ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.quick-access ul li {
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,21 @@
+{% extends "nexus/base.html" %}
+
+{% block content %}
+    <div class="form-content div-center noto-sans-reg">
+      <form method="POST">
+        {% csrf_token %}
+        <fieldset class="form-row div-center">
+          <legend class="form-title">Join Today</legend>
+          {{ form }}
+        </fieldset>
+        <div class="form-row div-center">
+          <button class="form-field btn-large" type="submit">Sign Up</button>
+        </div>
+      </form>
+      <div class="form-row div-center">
+        <small class="form-text-small">
+          Already Have an Account? <a class="form-link-small" href="{% url 'login' %}">Sign In</a>
+        </small>
+      </div>
+    </div>
+{% endblock content %}

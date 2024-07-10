@@ -1,0 +1,40 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.overview {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.quick-start {
+    margin-bottom: 2rem;
+}
+
+#quick-start-btn {
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.recent-projects {
+    width: 100%;
+}
+
+.recent-projects h2 {
+    text-align: center;
+}
+
+#recent-projects-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

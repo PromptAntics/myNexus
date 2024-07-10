@@ -1,0 +1,22 @@
+{% extends "nexus/base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'nexus/css/landing.css' %}">
+<div class="landing-page">
+    <div class="overview">
+        <h1>Welcome to AQL Nexus</h1>
+        <p>Quickly generate, customize, and debug prompts from various data sources.</p>
+    </div>
+    <div class="quick-start">
+        <button id="quick-start-btn">Quick Start</button>
+    </div>
+    <div class="recent-projects">
+        <h2>Recent Projects</h2>
+        <ul id="recent-projects-list">
+            {% for project in recent_projects %}
+            <li>{{ project.name }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

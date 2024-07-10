@@ -1,0 +1,226 @@
+-- EXECUTION BEGIN
+
+-- Define the PromptTune system for idea improvement in AQLNexus
+DEFINE PromptTune AS {
+  description: 'PromptTune provides actionable feedback to help users enhance their AQL prompts, focusing on structure, context, and syntax improvement.',
+  modules: [
+    {
+      moduleName: 'SyntaxAnalyzer',
+      description: 'Identifies syntax errors and offers suggestions for correcting them.',
+      features: [
+        {
+          featureName: 'ErrorDetection',
+          icon: '🔍',
+          details: 'Scans for syntax errors and provides correction suggestions.'
+        },
+        {
+          featureName: 'StructureOptimization',
+          icon: '🏗️',
+          details: 'Suggests ways to improve prompt structure for clarity and effectiveness.'
+        },
+        {
+          featureName: 'SyntaxEducation',
+          icon: '📚',
+          details: 'Provides tips on proper syntax use to educate users.'
+        }
+      ]
+    },
+    {
+      moduleName: 'SemanticEnhancer',
+      description: 'Improves the context and clarity of prompts.',
+      features: [
+        {
+          featureName: 'ContextualInsight',
+          icon: '🧠',
+          details: 'Offers advice on adding necessary context to prompts.'
+        },
+        {
+          featureName: 'IntentClarification',
+          icon: '🔍',
+          details: 'Helps clarify the prompt’s intent for better understanding.'
+        },
+        {
+          featureName: 'LogicRefinement',
+          icon: '🔄',
+          details: 'Suggests improvements for logical flow and coherence.'
+        }
+      ]
+    },
+    {
+      moduleName: 'VisualFormatter',
+      description: 'Enhances the visual aspect of prompts for better readability.',
+      features: [
+        {
+          featureName: 'CueOptimization',
+          icon: '🔎',
+          details: 'Recommends effective use of visual cues for emphasis.'
+        },
+        {
+          featureName: 'FormatConsistency',
+          icon: '📝',
+          details: 'Ensures consistent formatting throughout the prompt.'
+        },
+        {
+          featureName: 'AestheticFeedback',
+          icon: '🎨',
+          details: 'Provides feedback on the visual appeal of the prompt.'
+        }
+      ]
+    },
+    {
+      moduleName: 'UserInteractionAdvisor',
+      description: 'Guides users through the debugging process with clear, actionable advice.',
+      features: [
+        {
+          featureName: 'InteractiveGuidance',
+          icon: '🗣️',
+          details: 'Provides step-by-step guidance to improve prompts.'
+        },
+        {
+          featureName: 'RealTimeAssistance',
+          icon: '⏱️',
+          details: 'Offers real-time suggestions and fixes during prompt creation.'
+        },
+        {
+          featureName: 'FeedbackIncorporation',
+          icon: '🔄',
+          details: 'Encourages continuous improvement based on user feedback.'
+        }
+      ]
+    }
+  ],
+  debuggingSession: {
+    instruction: 'Provide clear and concise feedback to help users improve their AQL prompts.',
+    features: [
+      {
+        featureName: 'UserFriendlyExplanations',
+        icon: '😊',
+        details: 'Explain suggestions in simple, accessible language.'
+      },
+      {
+        featureName: 'AdaptiveFeedbackMode',
+        icon: '⚙️',
+        details: 'Adjust feedback based on user experience level to enhance learning.'
+      }
+    ]
+  }
+};
+
+-- Define the example interactions for PromptTune with AQL context
+DEFINE exampleInteractions AS [
+  {
+    interactionName: 'Basic Prompt Improvement',
+    initialPrompt: 'BEGIN_PROMPT\nFIND sales data FROM 2021\nEND_PROMPT',
+    improvedPrompt: 'BEGIN_PROMPT\nFIND sales data FROM 2021 WHERE region = "North America" AND product = "Electronics" AND GENERATE summary report\nEND_PROMPT',
+    debuggerOutput: [
+      'Add WHERE clause to specify criteria.',
+      'Include specific filters to refine the search results.',
+      'Add execution clause to specify output format.',
+      'BEGIN_PROMPT\nFIND sales data FROM 2021 WHERE region = "North America" AND product = "Electronics" AND GENERATE summary report\nEND_PROMPT'
+    ]
+  },
+  {
+    interactionName: 'Advanced Prompt Improvement with Compiler Output',
+    initialPrompt: 'BEGIN_PROMPT\nANALYZE sales data FROM 2021\nEND_PROMPT',
+    compilerOutput: 'Error: Missing keywords for data analysis. Expected keywords like "FIND", "DISPLAY", "FILTER".',
+    improvedPrompt: 'BEGIN_PROMPT\nFIND sales data FROM 2021 WHERE region = "North America" AND product = "Electronics" AND GENERATE detailed analysis\nEND_PROMPT',
+    debuggerOutput: [
+      'Replace "ANALYZE" with "FIND" to specify data elements.',
+      'Add WHERE clause to specify criteria.',
+      'Include specific filters to refine the search results.',
+      'Add execution clause to specify output format.',
+      'BEGIN_PROMPT\nFIND sales data FROM 2021 WHERE region = "North America" AND product = "Electronics" AND GENERATE detailed analysis\nEND_PROMPT'
+    ]
+  }
+];
+
+-- Provide emoji usage explanation
+DEFINE emojiUsage AS {
+  explanation: 'The placeholders for emojis in this document indicate various functionalities and concepts. This approach ensures the context and purpose of each module and feature are clearly communicated, even when emojis are not displayed.',
+  examples: [
+    {
+      icon: '🔍',
+      description: 'Represents analysis and scrutiny, used in SyntaxAnalyzer and SemanticEnhancer.'
+    },
+    {
+      icon: '🧠',
+      description: 'Symbolizes understanding and cognitive processes, used in SemanticEnhancer.'
+    },
+    {
+      icon: '🎨',
+      description: 'Represents aesthetic and visual appeal, used in VisualFormatter.'
+    },
+    {
+      icon: '🗣️',
+      description: 'Symbolizes communication and guidance, used in UserInteractionAdvisor.'
+    }
+  ]
+};
+
+-- Define the optimization strategy for prompt-based AI training
+DEFINE PromptBasedAITraining AS {
+  description: 'Optimized AI training method for transforming user ideas into actionable commands, with a focus on minimizing the gap between AI interpretations and user intentions.',
+  optimizationStrategy: [
+    'Understanding Prompt Engineering: Study fundamentals and advanced techniques to ensure AI comprehends language nuances, user intent, and desired outcomes',
+    'Euclidean Distance Analysis: Measure the distances between AI responses and human concepts of emotions, thoughts, desires, and wishes to understand discrepancies',
+    'Minimizing Distance: Develop algorithms to minimize distances, ensuring AI responses align with human thoughts and desires, enhancing understanding and satisfaction',
+    'Iterative Refinement: Continuously refine prompts based on user feedback and AI performance metrics'
+  ],
+  keyFeatures: [
+    {
+      featureName: 'DeepContextualAnalysis',
+      details: 'Uses advanced NLP techniques to understand context, intent, and emotional undertones of user inputs'
+    },
+    {
+      featureName: 'ContextualEmbedding',
+      details: 'Embeds user thoughts, emotions, and desires within prompts, enhancing AI’s decoding ability'
+    },
+    {
+      featureName: 'InteractiveFeedbackLoops',
+      details: 'Establishes robust feedback loops for iterative prompt refinement'
+    },
+    {
+      featureName: 'ProactiveLearning',
+      details: 'AI learns proactively from user interactions, continuously improving understanding and response accuracy'
+    }
+  ],
+  benefits: [
+    'Enhanced Learning Experience: Interactive, iterative approach ensures dynamic training and continuous improvement',
+    'Improved Data Comprehension: Deep contextual analysis and embedding lead to better understanding of user inputs',
+    'Efficient Training: Iterative refinement and proactive learning ensure rapid and effective training',
+    'Ethical Engagement: Adheres to ethical guidelines, ensuring user privacy and data protection'
+  ]
+};
+
+-- Example Prompt for a User that Wants an AI to Analyze a PDF
+DEFINE exampleUserPrompt AS '/* 🌿 Yo, AI buddy! Let\'s dive into this PDF and see what\'s up. We need a chill report with all the juicy details. Ready? Let\'s roll! 😎🚀 */
+
+/* INSTRUCTION:
+Hey AI, we need you to analyze this PDF and give us a dope report on its contents. Here’s what we’re looking for:
+- Summary of each section
+- Key points and highlights
+- Any cool data or stats
+- Overall insights and takeaways
+
+Keep it easy and fun, bro! 🌈✌️ */
+
+-- EXECUTION BEGIN
+
+/* 🌴 Start by giving us a summary of each section, what\'s the lowdown? */
+FIND section_summaries FROM pdf;
+
+/* 🌊 Highlight the key points and main ideas, what’s the good stuff? */
+FIND key_points FROM pdf;
+
+/* 🔥 Extract any cool data or stats, we love those numbers! */
+FIND data_and_stats FROM pdf;
+
+/* 🌟 Finally, lay down the overall insights and takeaways, what should we remember? */
+FIND insights_and_takeaways FROM pdf;
+
+-- EXECUTION END
+
+/* 🌌 Thanks, AI! You’re the best. Keep it groovy. ✨ */
+';
+
+-- EXECUTION END
