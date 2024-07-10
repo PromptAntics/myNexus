@@ -79,4 +79,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Check out our video demo to see myNexus IDE in action:
 
-[![myNexus IDE Demo](https://img.youtube.com/vi/your-video-id/maxresdefault.jpg)](https://youtu.be/bl9yV0EJCEI)
+[![myNexus IDE Demo](https://img.youtube.com/vi/bl9yV0EJCEI/maxresdefault.jpg)](https://youtu.be/bl9yV0EJCEI)
