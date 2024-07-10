@@ -1,6 +1,6 @@
 # myNexus IDE
 
-myNexus IDE is an open-source Integrated Development Environment (IDE) designed for prompt engineering, leveraging advanced natural language processing, quantum-inspired computational models, and deep learning.
+myNexus IDE is an open-source Integrated Development Environment (IDE) designed for prompt engineering.
 
 ## Features
 
