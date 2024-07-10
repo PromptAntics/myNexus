@@ -5,10 +5,8 @@ myNexus IDE is an open-source Integrated Development Environment (IDE) designed 
 ## Features
 
 - **Unified Workspace**: Integrates all steps of the workflow in a single interface.
-- **Rich Text and Code Editing**: Includes syntax highlighting, auto-suggestions, and error checking.
 - **File Handling**: Drag-and-drop interface with file preview.
-- **Real-Time Feedback and Debugging**: Provides instant feedback and suggestions as users type their prompts.
-- **Customization and Control**: Save and reuse prompt templates with customizable settings.
+- **Feedback and Debugging**: Provides feedback and suggestions as users type their prompts.
 - **Multi-Format Outputs**: Support for text, image, and speech outputs.
 - **Scalability and Performance**: Efficient backend and scalable infrastructure.
 
@@ -57,9 +55,8 @@ myNexus IDE is an open-source Integrated Development Environment (IDE) designed 
 
 1. **Upload Files**: Drag and drop files into the upload zone or click to select files.
 2. **Prompt Development**: Write and edit prompts in the rich text editor.
-3. **Generate Outputs**: Click "Develop" to generate text, image, or speech outputs.
+3. **Generate Outputs**: Click to generate text, image, or speech outputs.
 4. **Debug Prompts**: Use the debug tool to refine and optimize your prompts.
-5. **Save and Reuse**: Save your work for future use and leverage customizable settings for different AI models.
 
 ## Contributing
 
