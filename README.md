@@ -40,7 +40,7 @@ myNexus IDE is an open-source Integrated Development Environment (IDE) designed 
     - Open the `views.py` file located in the `nexus/` directory.
     - Replace the placeholder API key with your own key.
         ```python
-        SECRET_KEY = "your-django-secret-key"
+        OPENAI_API_KAY = "your-openai-api-key"
         ```
 
 4. **Apply migrations and run the server**:
